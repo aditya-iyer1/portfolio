@@ -4,4 +4,4 @@ This repository contains the source code for my personal portfolio website, buil
 HTML/CSS/JS and deployed using GitHub Pages.
 
 ## Live Site
-https://aditya-iyer1.github.io/portfolio/
+https://aditya-iyer1.github.io/
