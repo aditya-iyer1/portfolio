@@ -12,19 +12,32 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="/" class="nav-logo">Aditya Iyer</a>
+            <a href="index.html" class="nav-logo">Aditya Iyer</a>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/experience">Experience</a></li>
-                <li><a href="/resume">Resume</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects/index.html">Projects</a></li>
+                <li><a href="experience/index.html">Experience</a></li>
+                <li><a href="resume/index.html">Resume</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -33,15 +46,15 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Aditya Iyer</h1>
-                <p class="hero-subtitle">MS Data Science @ UC San Diego | Applied ML & AI Engineer</p>
+                <p class="hero-subtitle">MS Data Science @ UC San Diego</p>
                 <p class="hero-bio">
-                    I'm a graduate student passionate about building intelligent systems that solve real-world problems. 
-                    My work spans applied machine learning engineering, AI research, and data science, with a focus on 
-                    creating robust, scalable solutions that drive measurable impact.
+                    I'm a data science graduate student focused on building reliable, practical AI systems.<br><br>
+                    I enjoy applied machine learning, intelligent automation, and building tools that solve real problems.<br><br>
+                    Most of my work sits at the intersection of ML engineering, data science, and research.
                 </p>
                 <div class="hero-cta">
-                    <a href="/projects" class="btn btn-primary">View Projects</a>
-                    <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="projects/index.html" class="btn btn-primary">View Projects</a>
+                    <a href="contact/index.html" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
         </section>
@@ -63,7 +76,7 @@
                                 <span class="tag">AI</span>
                                 <span class="tag">ML</span>
                             </div>
-                            <a href="/projects/osworld-agent" class="project-link">View Project →</a>
+                            <a href="projects/osworld-agent.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
@@ -79,7 +92,7 @@
                                 <span class="tag">LangChain</span>
                                 <span class="tag">RAG</span>
                             </div>
-                            <a href="/projects/finance-rag" class="project-link">View Project →</a>
+                            <a href="projects/hallucination-resistant-rag.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
@@ -95,7 +108,7 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">SQL</span>
                             </div>
-                            <a href="/projects/allegiant-fpa" class="project-link">View Project →</a>
+                            <a href="projects/mixed-effects-forecasting.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
@@ -127,12 +140,12 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">Research</span>
                             </div>
-                            <a href="/projects/uci-mental-health" class="project-link">View Project →</a>
+                            <a href="projects/metalog-sip.html" class="project-link">View Project →</a>
                         </div>
                     </article>
                 </div>
                 <div class="section-footer">
-                    <a href="/projects" class="btn btn-secondary">View All Projects</a>
+                    <a href="projects/index.html" class="btn btn-secondary">View All Projects</a>
                 </div>
             </div>
         </section>
@@ -215,7 +228,7 @@
                     </div>
                 </div>
                 <div class="section-footer">
-                    <a href="/experience" class="btn btn-secondary">View Full Experience</a>
+                    <a href="experience/index.html" class="btn btn-secondary">View Full Experience</a>
                 </div>
             </div>
         </section>
@@ -227,19 +240,19 @@
             <div class="footer-content">
                 <p class="footer-text">&copy; 2024 Aditya Iyer. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <a href="https://github.com/aditya-iyer1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/aditya-a-iyer" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                             <rect x="2" y="9" width="4" height="12"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
-                    <a href="mailto:aditya@example.com" class="social-link" aria-label="Email">
+                    <a href="mailto:aditya4iyer@gmail.com" class="social-link" aria-label="Email">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>

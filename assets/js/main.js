@@ -1,4 +1,61 @@
 // ============================================
+// Dark Mode Toggle
+// ============================================
+
+(function() {
+    // Check for saved theme preference or default to dark mode
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Default to dark mode if no preference saved
+    if (!savedTheme) {
+        document.documentElement.classList.remove('light-mode');
+    } else if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-mode');
+    }
+    
+    // Initialize theme toggle button
+    function initThemeToggle() {
+        const themeToggle = document.getElementById('themeToggle');
+        if (!themeToggle) return;
+        
+        // Set initial icon
+        updateThemeIcon();
+        
+        themeToggle.addEventListener('click', function() {
+            const isLight = document.documentElement.classList.toggle('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            updateThemeIcon();
+        });
+    }
+    
+    function updateThemeIcon() {
+        const themeToggle = document.getElementById('themeToggle');
+        if (!themeToggle) return;
+        
+        const isLight = document.documentElement.classList.contains('light-mode');
+        const icon = themeToggle.querySelector('svg');
+        
+        if (icon) {
+            if (isLight) {
+                // Show moon icon (switch to dark)
+                icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+            } else {
+                // Show sun icon (switch to light)
+                icon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+            }
+        }
+    }
+    
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    } else {
+        initThemeToggle();
+    }
+})();
+
+// ============================================
 // Mobile Menu Toggle
 // ============================================
 

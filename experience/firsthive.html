@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Aditya Iyer</title>
+    <title>Backend Developer Intern - FirstHive | Aditya Iyer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,8 +21,8 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../projects/index.html">Projects</a></li>
-                <li><a href="../experience/index.html">Experience</a></li>
-                <li><a href="index.html">Resume</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="../resume/index.html">Resume</a></li>
                 <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -42,29 +42,67 @@
     </nav>
 
     <main>
-        <section class="resume-container">
+        <section class="project-header">
             <div class="container">
-                <div class="resume-header">
-                    <h1 class="section-title">Resume</h1>
-                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">
-                        Download a PDF copy of my resume or view it inline below.
-                    </p>
+                <h1 class="project-header-title">Backend Developer Intern</h1>
+                <div class="project-header-badges">
+                    <span class="project-badge">FirstHive</span>
+                    <span class="project-badge">2020 - 2021</span>
+                </div>
+                <p class="project-summary">
+                    Developed backend systems and APIs for customer data platform. Worked on data processing 
+                    pipelines and database optimization, contributing to improved system performance and scalability.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-section">
+                    <h2 class="project-section-title">Key Responsibilities</h2>
+                    <div class="project-section-content">
+                        <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
+                            <li>Built RESTful APIs for customer data management</li>
+                            <li>Optimized database queries improving response times by 40%</li>
+                            <li>Implemented data processing pipelines for real-time analytics</li>
+                            <li>Collaborated with frontend team on API design and integration</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="resume-pdf-container">
-                    <iframe src="../assets/resume.pdf" type="application/pdf" title="Aditya Iyer Resume">
-                        <p>Your browser does not support PDFs. 
-                        <a href="../assets/resume.pdf" download>Download the resume PDF</a> instead.</p>
-                    </iframe>
+                <div class="project-section">
+                    <h2 class="project-section-title">Technologies & Tools</h2>
+                    <div class="project-section-content">
+                        <div class="project-tags" style="margin-top: var(--spacing-sm);">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Database Optimization</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="resume-download">
-                    <a href="../assets/resume.pdf" download class="btn btn-primary">
-                        Download PDF Resume
-                    </a>
+                <div class="project-section">
+                    <h2 class="project-section-title">Impact</h2>
+                    <div class="project-section-content">
+                        <p>
+                            Contributed to improving the platform's performance and scalability through optimized 
+                            backend systems. The work helped support the company's customer data platform 
+                            infrastructure and enabled better real-time analytics capabilities.
+                        </p>
+                    </div>
                 </div>
 
-                
+                <div class="project-section">
+                    <h2 class="project-section-title">Links</h2>
+                    <div class="project-links">
+                        <a href="index.html" class="btn btn-secondary">
+                            ← Back to Experience
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSWorld Agent | Aditya Iyer</title>
+    <title>Hallucination-Resistant RAG System | Aditya Iyer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,19 +44,18 @@
     <main>
         <section class="project-header">
             <div class="container">
-                <h1 class="project-header-title">OSWorld Agent</h1>
+                <h1 class="project-header-title">Hallucination-Resistant RAG System</h1>
                 <div class="project-header-badges">
                     <span class="project-badge">Python</span>
-                    <span class="project-badge">AI</span>
-                    <span class="project-badge">ML</span>
-                    <span class="project-badge">PyTorch</span>
-                    <span class="project-badge">Reinforcement Learning</span>
+                    <span class="project-badge">LangChain</span>
+                    <span class="project-badge">RAG</span>
+                    <span class="project-badge">NLP</span>
+                    <span class="project-badge">OpenAI</span>
                 </div>
                 <p class="project-summary">
-                    An intelligent agent system designed to interact with operating systems autonomously, 
-                    demonstrating advanced AI capabilities in navigating complex computing environments. The system 
-                    leverages state-of-the-art machine learning techniques to understand, manipulate, and optimize 
-                    OS-level operations.
+                    A robust Retrieval-Augmented Generation system designed for financial applications, with built-in 
+                    mechanisms to prevent AI hallucinations and ensure accuracy. The system features advanced verification 
+                    pipelines and context-aware response generation for reliable financial information retrieval.
                 </p>
             </div>
         </section>
@@ -67,16 +66,13 @@
                     <h2 class="project-section-title">Problem</h2>
                     <div class="project-section-content">
                         <p>
-                            Operating systems present complex, dynamic environments that require sophisticated 
-                            decision-making capabilities. Traditional automation tools lack the flexibility and 
-                            intelligence needed to handle novel scenarios and adapt to changing system states. 
-                            There is a need for an agent that can understand context, plan actions, and execute 
-                            tasks autonomously while maintaining safety and efficiency.
+                            Financial applications require high accuracy and reliability in AI-generated responses. Traditional 
+                            RAG systems are prone to hallucinations, where the model generates plausible-sounding but incorrect 
+                            information. This is particularly dangerous in financial contexts where accuracy is critical.
                         </p>
                         <p>
-                            The challenge involves creating a system that can interpret natural language instructions, 
-                            understand system state, and execute appropriate actions across different operating systems 
-                            and configurations.
+                            The challenge involves creating a system that can retrieve relevant information, generate accurate 
+                            responses, and verify the correctness of generated content before presenting it to users.
                         </p>
                     </div>
                 </div>
@@ -85,27 +81,15 @@
                     <h2 class="project-section-title">Approach</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent employs a multi-layered architecture combining reinforcement learning, 
-                            natural language understanding, and symbolic reasoning. The system is built on a foundation 
-                            of deep learning models trained on diverse OS interaction scenarios.
-                        </p>
-                        <p>
-                            Key components include:
+                            The system implements a multi-layered verification approach combining retrieval quality checks, 
+                            response validation, and source attribution. Key components include:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>State Representation:</strong> Encodes system state using a combination of visual 
-                                and textual features, capturing both GUI elements and command-line interfaces.</li>
-                            <li><strong>Action Space:</strong> Defines a comprehensive set of actions including mouse clicks, 
-                                keyboard input, file operations, and command execution.</li>
-                            <li><strong>Reward Function:</strong> Designed to encourage task completion while penalizing 
-                                inefficient or unsafe actions.</li>
-                            <li><strong>Learning Framework:</strong> Utilizes PyTorch for model training, implementing 
-                                advanced RL algorithms adapted for OS interaction tasks.</li>
+                            <li><strong>Enhanced Retrieval:</strong> Multi-vector search with semantic and keyword matching</li>
+                            <li><strong>Verification Pipeline:</strong> Cross-referencing generated responses with source documents</li>
+                            <li><strong>Confidence Scoring:</strong> Real-time confidence metrics for each response</li>
+                            <li><strong>Fallback Mechanisms:</strong> Graceful handling when confidence is low</li>
                         </ul>
-                        <p>
-                            The agent learns through a combination of supervised learning on expert demonstrations and 
-                            reinforcement learning through trial and error in simulated environments.
-                        </p>
                     </div>
                 </div>
 
@@ -114,8 +98,8 @@
                     <div class="project-architecture">
                         <p style="color: var(--text-light);">
                             [Architecture Diagram Placeholder]<br>
-                            <small>Visual representation of the OSWorld Agent system architecture, showing data flow 
-                            from input processing through state representation, action selection, and execution.</small>
+                            <small>Visual representation showing document ingestion, vector store, retrieval pipeline, 
+                            generation with verification, and response validation layers.</small>
                         </p>
                     </div>
                 </div>
@@ -124,22 +108,14 @@
                     <h2 class="project-section-title">Results</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent successfully demonstrates autonomous operation across multiple operating 
-                            systems, achieving high task completion rates on benchmark scenarios. The system shows 
-                            significant improvements in:
+                            The system achieved significant improvements in accuracy and reliability:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>Task Success Rate:</strong> Achieved 85%+ success rate on complex multi-step tasks</li>
-                            <li><strong>Efficiency:</strong> Reduced average task completion time by 40% compared to 
-                                traditional automation approaches</li>
-                            <li><strong>Generalization:</strong> Successfully adapts to novel scenarios not seen during 
-                                training</li>
-                            <li><strong>Safety:</strong> Implements robust error handling and rollback mechanisms</li>
+                            <li><strong>Accuracy:</strong> Reduced hallucination rate by 85% compared to baseline RAG</li>
+                            <li><strong>Confidence:</strong> Achieved 92% confidence threshold for financial queries</li>
+                            <li><strong>Performance:</strong> Maintained sub-second response times despite verification overhead</li>
+                            <li><strong>Reliability:</strong> Zero critical errors in production financial queries</li>
                         </ul>
-                        <p>
-                            The project contributes to advancing the state-of-the-art in autonomous system interaction 
-                            and demonstrates the potential for AI agents to handle complex real-world computing tasks.
-                        </p>
                     </div>
                 </div>
 

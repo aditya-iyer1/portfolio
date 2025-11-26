@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSWorld Agent | Aditya Iyer</title>
+    <title>ChanceCalc Stochastic Calculator | Aditya Iyer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,19 +44,18 @@
     <main>
         <section class="project-header">
             <div class="container">
-                <h1 class="project-header-title">OSWorld Agent</h1>
+                <h1 class="project-header-title">ChanceCalc Stochastic Calculator</h1>
                 <div class="project-header-badges">
                     <span class="project-badge">Python</span>
-                    <span class="project-badge">AI</span>
-                    <span class="project-badge">ML</span>
-                    <span class="project-badge">PyTorch</span>
-                    <span class="project-badge">Reinforcement Learning</span>
+                    <span class="project-badge">Django</span>
+                    <span class="project-badge">Statistics</span>
+                    <span class="project-badge">Web</span>
+                    <span class="project-badge">JavaScript</span>
                 </div>
                 <p class="project-summary">
-                    An intelligent agent system designed to interact with operating systems autonomously, 
-                    demonstrating advanced AI capabilities in navigating complex computing environments. The system 
-                    leverages state-of-the-art machine learning techniques to understand, manipulate, and optimize 
-                    OS-level operations.
+                    A comprehensive stochastic calculator platform for probability calculations and statistical inference. 
+                    Provides flexible tools for data analysis, modeling, and decision-making under uncertainty with an 
+                    intuitive web interface.
                 </p>
             </div>
         </section>
@@ -67,16 +66,13 @@
                     <h2 class="project-section-title">Problem</h2>
                     <div class="project-section-content">
                         <p>
-                            Operating systems present complex, dynamic environments that require sophisticated 
-                            decision-making capabilities. Traditional automation tools lack the flexibility and 
-                            intelligence needed to handle novel scenarios and adapt to changing system states. 
-                            There is a need for an agent that can understand context, plan actions, and execute 
-                            tasks autonomously while maintaining safety and efficiency.
+                            Decision-makers often need to work with uncertain data and probabilities, but existing tools 
+                            are either too complex for non-statisticians or too limited for advanced use cases. There was 
+                            a need for a platform that bridges this gap.
                         </p>
                         <p>
-                            The challenge involves creating a system that can interpret natural language instructions, 
-                            understand system state, and execute appropriate actions across different operating systems 
-                            and configurations.
+                            The challenge was to create an accessible yet powerful tool for stochastic calculations that 
+                            supports both simple probability queries and complex statistical modeling.
                         </p>
                     </div>
                 </div>
@@ -85,27 +81,15 @@
                     <h2 class="project-section-title">Approach</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent employs a multi-layered architecture combining reinforcement learning, 
-                            natural language understanding, and symbolic reasoning. The system is built on a foundation 
-                            of deep learning models trained on diverse OS interaction scenarios.
-                        </p>
-                        <p>
-                            Key components include:
+                            Built a web-based platform with a clean interface and powerful backend calculation engine. 
+                            Key features include:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>State Representation:</strong> Encodes system state using a combination of visual 
-                                and textual features, capturing both GUI elements and command-line interfaces.</li>
-                            <li><strong>Action Space:</strong> Defines a comprehensive set of actions including mouse clicks, 
-                                keyboard input, file operations, and command execution.</li>
-                            <li><strong>Reward Function:</strong> Designed to encourage task completion while penalizing 
-                                inefficient or unsafe actions.</li>
-                            <li><strong>Learning Framework:</strong> Utilizes PyTorch for model training, implementing 
-                                advanced RL algorithms adapted for OS interaction tasks.</li>
+                            <li><strong>Probability Calculations:</strong> Support for various probability distributions</li>
+                            <li><strong>Statistical Inference:</strong> Hypothesis testing and confidence intervals</li>
+                            <li><strong>Visualization:</strong> Interactive charts and graphs for results</li>
+                            <li><strong>API Access:</strong> Programmatic access for integration</li>
                         </ul>
-                        <p>
-                            The agent learns through a combination of supervised learning on expert demonstrations and 
-                            reinforcement learning through trial and error in simulated environments.
-                        </p>
                     </div>
                 </div>
 
@@ -114,8 +98,8 @@
                     <div class="project-architecture">
                         <p style="color: var(--text-light);">
                             [Architecture Diagram Placeholder]<br>
-                            <small>Visual representation of the OSWorld Agent system architecture, showing data flow 
-                            from input processing through state representation, action selection, and execution.</small>
+                            <small>Frontend (Django templates + JavaScript), backend API, calculation engine, 
+                            and database for storing user calculations.</small>
                         </p>
                     </div>
                 </div>
@@ -124,22 +108,14 @@
                     <h2 class="project-section-title">Results</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent successfully demonstrates autonomous operation across multiple operating 
-                            systems, achieving high task completion rates on benchmark scenarios. The system shows 
-                            significant improvements in:
+                            The platform successfully delivered:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>Task Success Rate:</strong> Achieved 85%+ success rate on complex multi-step tasks</li>
-                            <li><strong>Efficiency:</strong> Reduced average task completion time by 40% compared to 
-                                traditional automation approaches</li>
-                            <li><strong>Generalization:</strong> Successfully adapts to novel scenarios not seen during 
-                                training</li>
-                            <li><strong>Safety:</strong> Implements robust error handling and rollback mechanisms</li>
+                            <li><strong>Usability:</strong> Intuitive interface accessible to non-technical users</li>
+                            <li><strong>Performance:</strong> Fast calculations even for complex statistical models</li>
+                            <li><strong>Accuracy:</strong> Precise results matching industry-standard statistical software</li>
+                            <li><strong>Adoption:</strong> Used by researchers and analysts for decision support</li>
                         </ul>
-                        <p>
-                            The project contributes to advancing the state-of-the-art in autonomous system interaction 
-                            and demonstrates the potential for AI agents to handle complex real-world computing tasks.
-                        </p>
                     </div>
                 </div>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSWorld Agent | Aditya Iyer</title>
+    <title>Mixed-Effects Flight Attendant Forecasting Model | Aditya Iyer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,19 +44,18 @@
     <main>
         <section class="project-header">
             <div class="container">
-                <h1 class="project-header-title">OSWorld Agent</h1>
+                <h1 class="project-header-title">Mixed-Effects Flight Attendant Forecasting Model</h1>
                 <div class="project-header-badges">
                     <span class="project-badge">Python</span>
-                    <span class="project-badge">AI</span>
-                    <span class="project-badge">ML</span>
-                    <span class="project-badge">PyTorch</span>
-                    <span class="project-badge">Reinforcement Learning</span>
+                    <span class="project-badge">Statistics</span>
+                    <span class="project-badge">SQL</span>
+                    <span class="project-badge">Mixed-Effects</span>
+                    <span class="project-badge">Forecasting</span>
                 </div>
                 <p class="project-summary">
-                    An intelligent agent system designed to interact with operating systems autonomously, 
-                    demonstrating advanced AI capabilities in navigating complex computing environments. The system 
-                    leverages state-of-the-art machine learning techniques to understand, manipulate, and optimize 
-                    OS-level operations.
+                    Advanced statistical modeling for financial planning and analysis at Allegiant Airlines, using 
+                    mixed-effects models to optimize flight attendant scheduling and resource allocation. Delivered 
+                    $5M+ annual impact through improved operational efficiency and data-driven decision making.
                 </p>
             </div>
         </section>
@@ -67,16 +66,14 @@
                     <h2 class="project-section-title">Problem</h2>
                     <div class="project-section-content">
                         <p>
-                            Operating systems present complex, dynamic environments that require sophisticated 
-                            decision-making capabilities. Traditional automation tools lack the flexibility and 
-                            intelligence needed to handle novel scenarios and adapt to changing system states. 
-                            There is a need for an agent that can understand context, plan actions, and execute 
-                            tasks autonomously while maintaining safety and efficiency.
+                            Flight attendant scheduling is a complex optimization problem with multiple constraints including 
+                            labor regulations, route patterns, and operational requirements. Traditional forecasting methods 
+                            failed to account for variability across routes, seasons, and individual factors.
                         </p>
                         <p>
-                            The challenge involves creating a system that can interpret natural language instructions, 
-                            understand system state, and execute appropriate actions across different operating systems 
-                            and configurations.
+                            The challenge was to create a model that could accurately forecast staffing needs while accounting 
+                            for both fixed effects (route characteristics) and random effects (seasonal variations, individual 
+                            preferences) to optimize resource allocation and reduce costs.
                         </p>
                     </div>
                 </div>
@@ -85,27 +82,15 @@
                     <h2 class="project-section-title">Approach</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent employs a multi-layered architecture combining reinforcement learning, 
-                            natural language understanding, and symbolic reasoning. The system is built on a foundation 
-                            of deep learning models trained on diverse OS interaction scenarios.
-                        </p>
-                        <p>
-                            Key components include:
+                            Developed a hierarchical mixed-effects model that captures both population-level trends and 
+                            individual-level variations. Key components include:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>State Representation:</strong> Encodes system state using a combination of visual 
-                                and textual features, capturing both GUI elements and command-line interfaces.</li>
-                            <li><strong>Action Space:</strong> Defines a comprehensive set of actions including mouse clicks, 
-                                keyboard input, file operations, and command execution.</li>
-                            <li><strong>Reward Function:</strong> Designed to encourage task completion while penalizing 
-                                inefficient or unsafe actions.</li>
-                            <li><strong>Learning Framework:</strong> Utilizes PyTorch for model training, implementing 
-                                advanced RL algorithms adapted for OS interaction tasks.</li>
+                            <li><strong>Fixed Effects:</strong> Route characteristics, aircraft type, time of day</li>
+                            <li><strong>Random Effects:</strong> Seasonal patterns, route-specific variations</li>
+                            <li><strong>Forecasting:</strong> Multi-step ahead predictions with uncertainty quantification</li>
+                            <li><strong>Optimization:</strong> Integration with scheduling algorithms for resource allocation</li>
                         </ul>
-                        <p>
-                            The agent learns through a combination of supervised learning on expert demonstrations and 
-                            reinforcement learning through trial and error in simulated environments.
-                        </p>
                     </div>
                 </div>
 
@@ -114,8 +99,8 @@
                     <div class="project-architecture">
                         <p style="color: var(--text-light);">
                             [Architecture Diagram Placeholder]<br>
-                            <small>Visual representation of the OSWorld Agent system architecture, showing data flow 
-                            from input processing through state representation, action selection, and execution.</small>
+                            <small>Data pipeline (SQL) → Feature engineering → Mixed-effects model training → 
+                            Forecasting engine → Scheduling optimization → Dashboard visualization.</small>
                         </p>
                     </div>
                 </div>
@@ -124,22 +109,14 @@
                     <h2 class="project-section-title">Results</h2>
                     <div class="project-section-content">
                         <p>
-                            The OSWorld Agent successfully demonstrates autonomous operation across multiple operating 
-                            systems, achieving high task completion rates on benchmark scenarios. The system shows 
-                            significant improvements in:
+                            The model delivered significant business impact:
                         </p>
                         <ul style="margin-left: 2rem; margin-bottom: var(--spacing-md); color: var(--text-secondary); line-height: 1.8;">
-                            <li><strong>Task Success Rate:</strong> Achieved 85%+ success rate on complex multi-step tasks</li>
-                            <li><strong>Efficiency:</strong> Reduced average task completion time by 40% compared to 
-                                traditional automation approaches</li>
-                            <li><strong>Generalization:</strong> Successfully adapts to novel scenarios not seen during 
-                                training</li>
-                            <li><strong>Safety:</strong> Implements robust error handling and rollback mechanisms</li>
+                            <li><strong>Financial Impact:</strong> $5M+ annual savings through optimized scheduling</li>
+                            <li><strong>Accuracy:</strong> 15% improvement in forecast accuracy vs. baseline methods</li>
+                            <li><strong>Efficiency:</strong> 70% reduction in manual analysis time</li>
+                            <li><strong>Adoption:</strong> Deployed in production for ongoing operational planning</li>
                         </ul>
-                        <p>
-                            The project contributes to advancing the state-of-the-art in autonomous system interaction 
-                            and demonstrates the potential for AI agents to handle complex real-world computing tasks.
-                        </p>
                     </div>
                 </div>
 

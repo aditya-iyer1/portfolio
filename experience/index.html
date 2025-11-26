@@ -12,19 +12,32 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="/" class="nav-logo">Aditya Iyer</a>
+            <a href="../index.html" class="nav-logo">Aditya Iyer</a>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/experience">Experience</a></li>
-                <li><a href="/resume">Resume</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="index.html">Experience</a></li>
+                <li><a href="../resume/index.html">Resume</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -40,8 +53,8 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">Data Science / FP&A</h3>
-                                <span class="timeline-company">Allegiant Airlines</span>
+                                <h3 class="timeline-title">Analyst, Financial Planning & Analysis</h3>
+                                <span class="timeline-company">Allegiant Travel Co.</span>
                                 <span class="timeline-date">2023 - Present</span>
                             </div>
                             <p class="timeline-description">
@@ -58,27 +71,7 @@
                                 <li>Implemented robust statistical models for financial planning and budget forecasting</li>
                                 <li>Created data visualization dashboards for executive decision-making</li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3 class="timeline-title">Data Science Development Program</h3>
-                                <span class="timeline-company">NSA</span>
-                                <span class="timeline-date">2022 - 2023</span>
-                            </div>
-                            <p class="timeline-description">
-                                Intensive development program focused on advanced data science techniques, machine learning, 
-                                and national security applications. Gained expertise in large-scale data processing and 
-                                secure computing environments.
-                            </p>
-                            <ul class="timeline-highlights">
-                                <li>Completed rigorous training in machine learning, statistical analysis, and data engineering</li>
-                                <li>Worked on projects involving large-scale data processing and analysis</li>
-                                <li>Developed expertise in secure computing and data privacy practices</li>
-                                <li>Collaborated with teams on complex analytical challenges</li>
-                            </ul>
+                            <a href="allegiant.html" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">View Details →</a>
                         </div>
                     </div>
 
@@ -86,7 +79,7 @@
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <h3 class="timeline-title">Research Assistant</h3>
-                                <span class="timeline-company">UC Irvine</span>
+                                <span class="timeline-company">UC Irvine (ISI-BUDS)</span>
                                 <span class="timeline-date">2021 - 2022</span>
                             </div>
                             <p class="timeline-description">
@@ -101,27 +94,49 @@
                                 <li>Collaborated with faculty and graduate students on statistical analysis projects</li>
                                 <li>Developed R scripts and statistical models for data analysis</li>
                             </ul>
+                            <a href="uc-irvine.html" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">View Details →</a>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">Technical Lead</h3>
-                                <span class="timeline-company">ChanceCalc</span>
+                                <h3 class="timeline-title">Backend Developer Intern</h3>
+                                <span class="timeline-company">FirstHive</span>
                                 <span class="timeline-date">2020 - 2021</span>
                             </div>
                             <p class="timeline-description">
-                                Led technical development for a statistical computing platform, focusing on probability 
-                                calculations and data analysis tools. Managed development team and product roadmap.
+                                Developed backend systems and APIs for customer data platform. Worked on data processing 
+                                pipelines and database optimization.
                             </p>
                             <ul class="timeline-highlights">
-                                <li>Led development of statistical computing library and platform features</li>
-                                <li>Managed technical team and coordinated product development</li>
-                                <li>Designed and implemented probability calculation algorithms</li>
-                                <li>Ensured code quality and maintained technical documentation</li>
-                                <li>Collaborated with stakeholders to define product requirements</li>
+                                <li>Built RESTful APIs for customer data management</li>
+                                <li>Optimized database queries improving response times by 40%</li>
+                                <li>Implemented data processing pipelines for real-time analytics</li>
+                                <li>Collaborated with frontend team on API design and integration</li>
                             </ul>
+                            <a href="firsthive.html" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">View Details →</a>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Finance & Business Intelligence Intern</h3>
+                                <span class="timeline-company">Ecosense Lighting</span>
+                                <span class="timeline-date">2019 - 2020</span>
+                            </div>
+                            <p class="timeline-description">
+                                Supported financial analysis and business intelligence initiatives. Created reports and 
+                                dashboards for financial planning and operational insights.
+                            </p>
+                            <ul class="timeline-highlights">
+                                <li>Developed financial models and forecasting tools</li>
+                                <li>Created business intelligence dashboards using Tableau</li>
+                                <li>Analyzed financial data to support strategic decision-making</li>
+                                <li>Automated reporting processes reducing manual work by 50%</li>
+                            </ul>
+                            <a href="ecosense.html" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">View Details →</a>
                         </div>
                     </div>
                 </div>
@@ -134,19 +149,19 @@
             <div class="footer-content">
                 <p class="footer-text">&copy; 2024 Aditya Iyer. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <a href="https://github.com/aditya-iyer1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                         </svg>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/aditya-a-iyer" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                             <rect x="2" y="9" width="4" height="12"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
-                    <a href="mailto:aditya@example.com" class="social-link" aria-label="Email">
+                    <a href="mailto:aditya4iyer@gmail.com" class="social-link" aria-label="Email">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
