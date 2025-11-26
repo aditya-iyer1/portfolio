@@ -13,15 +13,10 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="nav-logo">Aditya Iyer</a>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/" class="active">Home</a></li>
                 <li><a href="/experience/">Experience</a></li>
+                <li><a href="/projects/">Projects</a></li>
                 <li><a href="/resume/">Resume</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
@@ -62,6 +57,120 @@
                             <a href="/projects/" class="btn btn-primary">View Projects</a>
                             <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Preview -->
+        <section class="section home-experience" id="experience-preview">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="home-experience-timeline">
+                    <article class="home-experience-item">
+                        <div class="home-experience-node"></div>
+                        <div class="home-experience-card">
+                            <div class="home-experience-card-header">
+                                <img src="assets/img/experience-logos/allegiant.jpg" alt="Allegiant Airlines logo" class="home-experience-logo">
+                                <div>
+                                    <p class="home-experience-role">Data Science / FP&A</p>
+                                    <p class="home-experience-company">Allegiant Airlines • 2023&nbsp;–&nbsp;Present</p>
+                                    <p class="home-experience-location">Las Vegas, NV</p>
+                                </div>
+                            </div>
+                            <ul class="home-experience-list">
+                                <li>Placeholder 1</li>
+                                <li>Placeholder 2</li>
+                                <li>Placeholder 3</li>
+                                <li>Placeholder 4</li>
+                            </ul>
+                            <div class="home-experience-tags">
+                                <span class="experience-skill-tag">Skill 1</span>
+                                <span class="experience-skill-tag">Skill 2</span>
+                                <span class="experience-skill-tag">Skill 3</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="home-experience-item">
+                        <div class="home-experience-node"></div>
+                        <div class="home-experience-card">
+                            <div class="home-experience-card-header">
+                                <img src="assets/img/experience-logos/uci.jpg" alt="UC Irvine logo" class="home-experience-logo">
+                                <div>
+                                    <p class="home-experience-role">Research Assistant</p>
+                                    <p class="home-experience-company">UC Irvine • 2021&nbsp;–&nbsp;2022</p>
+                                    <p class="home-experience-location">Irvine, CA</p>
+                                </div>
+                            </div>
+                            <ul class="home-experience-list">
+                                <li>Placeholder 1</li>
+                                <li>Placeholder 2</li>
+                                <li>Placeholder 3</li>
+                                <li>Placeholder 4</li>
+                            </ul>
+                            <div class="home-experience-tags">
+                                <span class="experience-skill-tag">Skill 1</span>
+                                <span class="experience-skill-tag">Skill 2</span>
+                                <span class="experience-skill-tag">Skill 3</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="home-experience-item">
+                        <div class="home-experience-node"></div>
+                        <div class="home-experience-card">
+                            <div class="home-experience-card-header">
+                                <img src="assets/img/experience-logos/firsthive.jpg" alt="FirstHive logo" class="home-experience-logo">
+                                <div>
+                                    <p class="home-experience-role">Backend Developer Intern</p>
+                                    <p class="home-experience-company">FirstHive • 2020&nbsp;–&nbsp;2021</p>
+                                    <p class="home-experience-location">Bengaluru, India</p>
+                                </div>
+                            </div>
+                            <ul class="home-experience-list">
+                                <li>Placeholder 1</li>
+                                <li>Placeholder 2</li>
+                                <li>Placeholder 3</li>
+                                <li>Placeholder 4</li>
+                            </ul>
+                            <div class="home-experience-tags">
+                                <span class="experience-skill-tag">Skill 1</span>
+                                <span class="experience-skill-tag">Skill 2</span>
+                                <span class="experience-skill-tag">Skill 3</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="home-experience-fade"></div>
+                <div class="section-footer">
+                    <a href="/experience/" class="btn btn-secondary">View Full Experience</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section section-alt" id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">M.S., Data Science</h3>
+                            <span class="education-school">UC San Diego</span>
+                            <span class="education-date">2025–2026</span>
+                        </div>
+                        <p class="education-courses">
+                            <strong>Relevant courses:</strong> Recommender Systems, Numerical Linear Algebra, High-Dimensional Probability
+                        </p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">B.S., Statistics & Data Science</h3>
+                            <span class="education-school">UC Santa Barbara</span>
+                            <span class="education-date">2022–2025</span>
+                        </div>
+                        <p class="education-courses">
+                            <strong>Relevant courses:</strong> Statistical ML, Regression, Stochastic Processes, Big Data Analytics, Survival Analysis
+                        </p>
                     </div>
                 </div>
             </div>
@@ -148,7 +257,7 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">Research</span>
                             </div>
-                            <a href="/projects/metalog-sip.html" class="project-link">View Project →</a>
+                            <a href="/experience/uc-irvine.html" class="project-link">View Project →</a>
                         </div>
                     </article>
                 </div>
@@ -207,36 +316,20 @@
             </div>
         </section>
 
-        <!-- Experience Preview -->
-        <section class="section" id="experience-preview">
+        <!-- Resume & Contact Section -->
+        <section class="section" id="resume-contact">
             <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="experience-preview">
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3 class="experience-title">Data Science / FP&A</h3>
-                            <span class="experience-company">Allegiant Airlines</span>
-                            <span class="experience-date">2023 - Present</span>
-                        </div>
-                        <p class="experience-description">
-                            Led mixed-effects modeling initiatives for flight attendant scheduling optimization, 
-                            resulting in $5M+ impact through improved resource allocation and automation.
-                        </p>
+                <div class="resume-contact-grid">
+                    <div class="resume-contact-item">
+                        <h3 class="resume-contact-title">Resume</h3>
+                        <p class="resume-contact-description">Download or view my resume</p>
+                        <a href="/resume/" class="btn btn-primary">View Resume</a>
                     </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3 class="experience-title">Data Science Development Program</h3>
-                            <span class="experience-company">NSA</span>
-                            <span class="experience-date">2022 - 2023</span>
-                        </div>
-                        <p class="experience-description">
-                            Intensive development program focused on advanced data science techniques, 
-                            machine learning, and national security applications.
-                        </p>
+                    <div class="resume-contact-item">
+                        <h3 class="resume-contact-title">Get in Touch</h3>
+                        <p class="resume-contact-description">Let's connect and collaborate</p>
+                        <a href="/contact/" class="btn btn-secondary">Contact Me</a>
                     </div>
-                </div>
-                <div class="section-footer">
-                    <a href="/experience/" class="btn btn-secondary">View Full Experience</a>
                 </div>
             </div>
         </section>
