@@ -1493,6 +1493,50 @@ a:hover {
 }
 
 /* ============================================
+   Mobile Prank Popup (Temporary)
+   ============================================ */
+
+.prank-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+}
+
+.prank-content {
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--accent);
+    max-width: 320px;
+    width: 90%;
+}
+
+.prank-heart {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.prank-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .prank-overlay {
+        display: none; /* will be toggled via JS */
+    }
+}
+
+/* ============================================
    Utility Classes
    ============================================ */
 
