@@ -12,13 +12,13 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="/" class="nav-logo">Aditya Iyer</a>
+            <a href="/#top" class="nav-logo">Aditya Iyer</a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/experience/">Experience</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/resume/">Resume</a></li>
-                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/#experience" data-section="experience">Experience</a></li>
+                <li><a href="/#education" data-section="education">Education</a></li>
+                <li><a href="/#projects" data-section="projects">Projects</a></li>
+                <li><a href="/#skills" data-section="skills">Skills</a></li>
+                <li><a href="/#contact" data-section="contact">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -38,11 +38,31 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="top">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-image-container">
                         <img src="assets/img/profile.jpg" alt="Aditya Iyer" class="hero-profile-image" id="heroProfileImage">
+                        <div class="hero-social-icons">
+                            <a href="mailto:aditya4iyer@gmail.com" class="hero-social-icon" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/aditya-a-iyer" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/aditya-iyer1" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="hero-divider"></div>
                     <div class="hero-text">
@@ -54,8 +74,8 @@
                             I'm passionate about AI/ML research, specifically in areas like causal inference, agentic systems, and LLM interpretability.
                         </p>
                         <div class="hero-cta">
-                            <a href="/projects/" class="btn btn-primary">View Projects</a>
-                            <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                         </div>
                     </div>
                 </div>
@@ -63,86 +83,98 @@
         </section>
 
         <!-- Experience Preview -->
-        <section class="section home-experience" id="experience-preview">
+        <section class="section home-experience" id="experience">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
                 <div class="home-experience-timeline">
                     <article class="home-experience-item">
-                        <div class="home-experience-node"></div>
                         <div class="home-experience-card">
                             <div class="home-experience-card-header">
-                                <img src="assets/img/experience-logos/allegiant.jpg" alt="Allegiant Airlines logo" class="home-experience-logo">
-                                <div>
-                                    <p class="home-experience-role">Data Science / FP&A</p>
-                                    <p class="home-experience-company">Allegiant Airlines • 2023&nbsp;–&nbsp;Present</p>
-                                    <p class="home-experience-location">Las Vegas, NV</p>
+                                <div class="home-experience-company-block">
+                                    <div class="home-experience-logo-wrapper">
+                                        <img src="assets/img/experience-logos/allegiant.jpg" alt="Allegiant Airlines logo" class="home-experience-logo">
+                                    </div>
+                                    <p class="home-experience-company">Allegiant Airlines</p>
                                 </div>
+                                <p class="home-experience-date">March 2025&nbsp;–&nbsp;September 2025</p>
+                            </div>
+                            <div class="home-experience-role-location">
+                                <p class="home-experience-role">Analyst, Financial Planning & Analysis</p>
+                                <p class="home-experience-location">Las Vegas, NV</p>
                             </div>
                             <ul class="home-experience-list">
-                                <li>Placeholder 1</li>
-                                <li>Placeholder 2</li>
-                                <li>Placeholder 3</li>
-                                <li>Placeholder 4</li>
+                                <li>Developed financial models for flight hours, headcount, and crew pay to support budgeting and planning</li>
+                                <li>Automated forecast workflows linking SQL + Python with Excel & made Streamlit dashboard for executives</li>
+                                <li>Applied PCA & Gaussian Mixture Models to identify largest cost drivers across flight attendant bases</li>
+                                <li>Improved forecast accuracy from 25% to within 1% monthly, driving over $5M+ in annual cost savings</li>
                             </ul>
                             <div class="home-experience-tags">
-                                <span class="experience-skill-tag">Skill 1</span>
-                                <span class="experience-skill-tag">Skill 2</span>
-                                <span class="experience-skill-tag">Skill 3</span>
+                                <span class="experience-skill-tag">MLOps</span>
+                                <span class="experience-skill-tag">Streamlit</span>
+                                <span class="experience-skill-tag">MS SQL Server</span>
+                                <span class="experience-skill-tag">scikit-learn</span>
                             </div>
                         </div>
                     </article>
                     <article class="home-experience-item">
-                        <div class="home-experience-node"></div>
                         <div class="home-experience-card">
                             <div class="home-experience-card-header">
-                                <img src="assets/img/experience-logos/uci.jpg" alt="UC Irvine logo" class="home-experience-logo">
-                                <div>
-                                    <p class="home-experience-role">Research Assistant</p>
-                                    <p class="home-experience-company">UC Irvine • 2021&nbsp;–&nbsp;2022</p>
-                                    <p class="home-experience-location">Irvine, CA</p>
+                                <div class="home-experience-company-block">
+                                    <div class="home-experience-logo-wrapper">
+                                        <img src="assets/img/experience-logos/uci.jpg" alt="UC Irvine logo" class="home-experience-logo">
+                                    </div>
+                                    <p class="home-experience-company">UC Irvine</p>
                                 </div>
+                                <p class="home-experience-date">June 2024&nbsp;–&nbsp;August 2024</p>
+                            </div>
+                            <div class="home-experience-role-location">
+                                <p class="home-experience-role">Research Assistant</p>
+                                <p class="home-experience-location">Irvine, CA</p>
                             </div>
                             <ul class="home-experience-list">
-                                <li>Placeholder 1</li>
-                                <li>Placeholder 2</li>
-                                <li>Placeholder 3</li>
-                                <li>Placeholder 4</li>
+                                <li>Analyzed survey data to assess impact of internal displacement on depression in Ukrainian men</li>
+                                <li>Applied mixed-effects regression models and multiple imputation in R to study displacement effect sizes</li>
+                                <li>Incorporated social network analysis to address sampling biases; presenting findings at USPROC competition</li>
                             </ul>
                             <div class="home-experience-tags">
-                                <span class="experience-skill-tag">Skill 1</span>
-                                <span class="experience-skill-tag">Skill 2</span>
-                                <span class="experience-skill-tag">Skill 3</span>
+                                <span class="experience-skill-tag">R</span>
+                                <span class="experience-skill-tag">Tidyverse/Tidymodels</span>
+                                <span class="experience-skill-tag">MICE</span>
+                                <span class="experience-skill-tag">Social Network Analysis</span>
+                                <span class="experience-skill-tag">Mixed-Effects Modeling</span>
                             </div>
                         </div>
                     </article>
                     <article class="home-experience-item">
-                        <div class="home-experience-node"></div>
                         <div class="home-experience-card">
                             <div class="home-experience-card-header">
-                                <img src="assets/img/experience-logos/firsthive.jpg" alt="FirstHive logo" class="home-experience-logo">
-                                <div>
-                                    <p class="home-experience-role">Backend Developer Intern</p>
-                                    <p class="home-experience-company">FirstHive • 2020&nbsp;–&nbsp;2021</p>
-                                    <p class="home-experience-location">Bengaluru, India</p>
+                                <div class="home-experience-company-block">
+                                    <div class="home-experience-logo-wrapper">
+                                        <img src="assets/img/experience-logos/firsthive.jpg" alt="FirstHive logo" class="home-experience-logo">
+                                    </div>
+                                    <p class="home-experience-company">FirstHive</p>
                                 </div>
+                                <p class="home-experience-date">August 2023&nbsp;–&nbsp;June 2024</p>
+                            </div>
+                            <div class="home-experience-role-location">
+                                <p class="home-experience-role">Backend Developer Intern</p>
+                                <p class="home-experience-location">Remote / Cupertino, CA</p>
                             </div>
                             <ul class="home-experience-list">
-                                <li>Placeholder 1</li>
-                                <li>Placeholder 2</li>
-                                <li>Placeholder 3</li>
-                                <li>Placeholder 4</li>
+                                <li>Reduced query load time by optimizing database-website functionality using Django and MySQL</li>
+                                <li>Redesigned UI/UX across web pages, simplifying navigation and improving user engagement</li>
+                                <li>Developed predictive algorithms to analyze user churn and retention rates, delivering insights for business strategy</li>
                             </ul>
                             <div class="home-experience-tags">
-                                <span class="experience-skill-tag">Skill 1</span>
-                                <span class="experience-skill-tag">Skill 2</span>
-                                <span class="experience-skill-tag">Skill 3</span>
+                                <span class="experience-skill-tag">Django</span>
+                                <span class="experience-skill-tag">MySQL</span>
+                                <span class="experience-skill-tag">REST APIs</span>
+                                <span class="experience-skill-tag">Predictive Analytics</span>
+                                <span class="experience-skill-tag">ORM Optimization</span>
+                                <span class="experience-skill-tag">Churn/Retention Analysis</span>
                             </div>
                         </div>
                     </article>
-                </div>
-                <div class="home-experience-fade"></div>
-                <div class="section-footer">
-                    <a href="/experience/" class="btn btn-secondary">View Full Experience</a>
                 </div>
             </div>
         </section>
@@ -153,24 +185,56 @@
                 <h2 class="section-title">Education</h2>
                 <div class="education-list">
                     <div class="education-item">
-                        <div class="education-header">
-                            <h3 class="education-degree">M.S., Data Science</h3>
-                            <span class="education-school">UC San Diego</span>
+                        <div class="education-card-header">
+                            <div class="education-school-block">
+                                <div class="education-logo-wrapper">
+                                    <img src="assets/img/education-logos/ucsd.jpg" alt="UC San Diego logo" class="education-logo">
+                                </div>
+                                <h3 class="education-school-name">UC San Diego</h3>
+                            </div>
                             <span class="education-date">2025–2026</span>
                         </div>
-                        <p class="education-courses">
-                            <strong>Relevant courses:</strong> Recommender Systems, Numerical Linear Algebra, High-Dimensional Probability
-                        </p>
+                        <p class="education-degree">M.S., Data Science</p>
+                        <div class="education-categories">
+                            <div class="education-category">
+                                <h4 class="education-category-title">AI/ML:</h4>
+                                <p class="education-category-content">Recommender Systems, Efficient AI Systems, Machine Learning</p>
+                            </div>
+                            <div class="education-category">
+                                <h4 class="education-category-title">Statistical Modeling:</h4>
+                                <p class="education-category-content">High-Dimensional Probability & Statistics, Statistical Models, Stochastic Optimization, Sequential Decision Making</p>
+                            </div>
+                            <div class="education-category">
+                                <h4 class="education-category-title">Mathematics:</h4>
+                                <p class="education-category-content">Numerical Linear Algebra</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="education-item">
-                        <div class="education-header">
-                            <h3 class="education-degree">B.S., Statistics & Data Science</h3>
-                            <span class="education-school">UC Santa Barbara</span>
+                        <div class="education-card-header">
+                            <div class="education-school-block">
+                                <div class="education-logo-wrapper">
+                                    <img src="assets/img/education-logos/ucsb.jpg" alt="UC Santa Barbara logo" class="education-logo">
+                                </div>
+                                <h3 class="education-school-name">UC Santa Barbara</h3>
+                            </div>
                             <span class="education-date">2022–2025</span>
                         </div>
-                        <p class="education-courses">
-                            <strong>Relevant courses:</strong> Statistical ML, Regression, Stochastic Processes, Big Data Analytics, Survival Analysis
-                        </p>
+                        <p class="education-degree">B.S., Statistics & Data Science</p>
+                        <div class="education-categories">
+                            <div class="education-category">
+                                <h4 class="education-category-title">AI/ML:</h4>
+                                <p class="education-category-content">Statistical Machine Learning, Statistical Data Science, Big Data Analytics</p>
+                            </div>
+                            <div class="education-category">
+                                <h4 class="education-category-title">Statistical Modeling:</h4>
+                                <p class="education-category-content">Probability & Statistics, SAS Programming, Stochastic Processes, Experiment Design, Regression Analysis, Advanced Statistical Modeling, Non-parametric Modeling, Survival Analysis</p>
+                            </div>
+                            <div class="education-category">
+                                <h4 class="education-category-title">Mathematics:</h4>
+                                <p class="education-category-content">Linear Algebra w/ Applications, Vector Calculus, Differential Equations</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +248,7 @@
                     <article class="project-card">
                         <div class="project-card-content">
                             <h3 class="project-title">OSWorld Agent</h3>
+                            <p class="project-date">2024 – Present</p>
                             <p class="project-description">
                                 An intelligent agent system for operating system interactions, leveraging advanced AI 
                                 techniques to navigate and manipulate complex computing environments.
@@ -193,13 +258,13 @@
                                 <span class="tag">AI</span>
                                 <span class="tag">ML</span>
                             </div>
-                            <a href="/projects/osworld-agent.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card-content">
                             <h3 class="project-title">Hallucination-Resistant Finance RAG</h3>
+                            <p class="project-date">2024 – Present</p>
                             <p class="project-description">
                                 A robust Retrieval-Augmented Generation system designed for financial applications, 
                                 with built-in mechanisms to prevent AI hallucinations and ensure accuracy.
@@ -209,13 +274,13 @@
                                 <span class="tag">LangChain</span>
                                 <span class="tag">RAG</span>
                             </div>
-                            <a href="/projects/hallucination-resistant-rag.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card-content">
                             <h3 class="project-title">Allegiant FP&A Mixed-Effects Modeling</h3>
+                            <p class="project-date">2025</p>
                             <p class="project-description">
                                 Advanced statistical modeling for financial planning and analysis, using mixed-effects 
                                 models to optimize flight attendant scheduling and resource allocation.
@@ -225,13 +290,13 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">SQL</span>
                             </div>
-                            <a href="/projects/mixed-effects-forecasting.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card-content">
                             <h3 class="project-title">Metalog SIP Python Library</h3>
+                            <p class="project-date">2024</p>
                             <p class="project-description">
                                 A comprehensive Python library for metalog distributions and statistical inference, 
                                 providing flexible tools for data analysis and modeling.
@@ -241,13 +306,13 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">Open Source</span>
                             </div>
-                            <a href="/projects/metalog-sip.html" class="project-link">View Project →</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-card-content">
                             <h3 class="project-title">UCI Mental Health Mixed-Effects Research</h3>
+                            <p class="project-date">2024</p>
                             <p class="project-description">
                                 Research project applying mixed-effects modeling to mental health data, exploring 
                                 patterns and relationships in longitudinal mental health outcomes.
@@ -257,12 +322,21 @@
                                 <span class="tag">Statistics</span>
                                 <span class="tag">Research</span>
                             </div>
-                            <a href="/experience/uc-irvine.html" class="project-link">View Project →</a>
                         </div>
                     </article>
-                </div>
-                <div class="section-footer">
-                    <a href="/projects/" class="btn btn-secondary">View All Projects</a>
+
+                    <article class="project-card">
+                        <div class="project-card-content">
+                            <h3 class="project-title">Project Placeholder</h3>
+                            <p class="project-date">TBD</p>
+                            <p class="project-description">
+                                This is a placeholder for a future project. More details will be added soon.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Coming Soon</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -283,7 +357,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-category-title">ML/AI Frameworks</h3>
+                        <h3 class="skill-category-title">AI/ML</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">PyTorch</span>
                             <span class="skill-tag">TensorFlow</span>
@@ -293,13 +367,21 @@
                         </div>
                     </div>
                     <div class="skill-category">
+                        <h3 class="skill-category-title">Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MS SQL Server</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
                         <h3 class="skill-category-title">Tools & Technologies</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">Docker</span>
                             <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Streamlit</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -316,19 +398,63 @@
             </div>
         </section>
 
-        <!-- Resume & Contact Section -->
-        <section class="section" id="resume-contact">
+        <!-- Contact Section -->
+        <section class="section" id="contact">
             <div class="container">
-                <div class="resume-contact-grid">
-                    <div class="resume-contact-item">
-                        <h3 class="resume-contact-title">Resume</h3>
-                        <p class="resume-contact-description">Download or view my resume</p>
-                        <a href="/resume/" class="btn btn-primary">View Resume</a>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-description" style="text-align: center; color: var(--text-secondary); margin-bottom: var(--spacing-lg); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    I'm always open to discussing new opportunities, collaborations, or just having a conversation 
+                    about data science, machine learning, and AI. Feel free to reach out through any of the channels below.
+                </p>
+                
+                <div class="contact-options" style="display: flex; flex-direction: column; gap: var(--spacing-md); max-width: 600px; margin: 0 auto var(--spacing-xl) auto;">
+                    <a href="mailto:aditya4iyer@gmail.com" class="contact-option" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-md); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--border-radius); text-decoration: none; color: var(--text); transition: var(--transition);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email Me</span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/aditya-a-iyer" target="_blank" rel="noopener noreferrer" class="contact-option" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-md); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--border-radius); text-decoration: none; color: var(--text); transition: var(--transition);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/aditya-iyer1" target="_blank" rel="noopener noreferrer" class="contact-option" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-md); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--border-radius); text-decoration: none; color: var(--text); transition: var(--transition);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+
+                <!-- Resume Section -->
+                <div id="resume-section" style="margin-top: var(--spacing-xl);">
+                    <div style="text-align: center; margin-bottom: var(--spacing-md);">
+                        <h3 class="resume-contact-title" style="margin-bottom: var(--spacing-sm);">Resume</h3>
+                        <p class="resume-contact-description" style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">
+                            Download a PDF copy of my resume or view it inline below.
+                        </p>
+                        <button id="toggleResume" class="btn btn-primary" style="margin-bottom: var(--spacing-md);">View Resume</button>
                     </div>
-                    <div class="resume-contact-item">
-                        <h3 class="resume-contact-title">Get in Touch</h3>
-                        <p class="resume-contact-description">Let's connect and collaborate</p>
-                        <a href="/contact/" class="btn btn-secondary">Contact Me</a>
+                    
+                    <div id="resume-content" style="display: none;">
+                        <div class="resume-pdf-container" style="margin-bottom: var(--spacing-md);">
+                            <iframe src="assets/resume.pdf" type="application/pdf" title="Aditya Iyer Resume" style="width: 100%; height: 800px; border: 1px solid var(--border); border-radius: var(--border-radius);">
+                                <p>Your browser does not support PDFs. 
+                                <a href="assets/resume.pdf" download>Download the resume PDF</a> instead.</p>
+                            </iframe>
+                        </div>
+                        <div class="resume-download" style="text-align: center;">
+                            <a href="assets/resume.pdf" download class="btn btn-primary">
+                                Download PDF Resume
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -339,7 +465,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-text">&copy; 2024 Aditya Iyer. All rights reserved.</p>
+                <p class="footer-text">&copy; 2025 Aditya Iyer. All rights reserved.</p>
                 <div class="footer-social">
                     <a href="https://github.com/aditya-iyer1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -363,6 +489,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
 
     <script src="assets/js/main.js"></script>
 </body>

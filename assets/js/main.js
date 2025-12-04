@@ -121,23 +121,124 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// Project Card Click Handler
+// Active Section Highlighting
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        const link = card.querySelector('.project-link');
-        if (link) {
-            card.addEventListener('click', function(e) {
-                // Only navigate if not clicking directly on the link
-                if (e.target !== link && !link.contains(e.target)) {
-                    window.location.href = link.getAttribute('href');
-                }
-            });
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a[data-section]');
+    
+    function updateActiveSection() {
+        const scrollPosition = window.scrollY + 150; // Offset for navbar
+        
+        // If at top, remove all active states
+        if (window.scrollY < 100) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            return;
+        }
+        
+        // Find the current section
+        let currentSection = '';
+        let lastSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
             
-            // Add cursor pointer
-            card.style.cursor = 'pointer';
+            if (scrollPosition >= sectionTop) {
+                lastSection = sectionId;
+            }
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentSection = sectionId;
+            }
+        });
+        
+        // If we're past all sections but still scrolling, highlight the last one
+        if (!currentSection && lastSection) {
+            currentSection = lastSection;
+        }
+        
+        // Special handling for contact section - if near bottom of page, highlight contact
+        const documentHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+        const scrollBottom = window.scrollY + windowHeight;
+        
+        if (scrollBottom >= documentHeight - 50) {
+            currentSection = 'contact';
+        }
+        
+        // Update active state
+        navLinks.forEach(link => {
+            const section = link.getAttribute('data-section');
+            if (section === currentSection) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', debounce(updateActiveSection, 10));
+    updateActiveSection(); // Initial check
+});
+
+// ============================================
+// Back to Top Button
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('backToTop');
+    const heroSection = document.getElementById('top');
+    
+    if (!backToTopButton || !heroSection) return;
+    
+    function toggleBackToTop() {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        
+        if (window.scrollY > heroBottom) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    }
+    
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    window.addEventListener('scroll', debounce(toggleBackToTop, 10));
+    toggleBackToTop(); // Initial check
+});
+
+// ============================================
+// Resume Toggle
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleResumeBtn = document.getElementById('toggleResume');
+    const resumeContent = document.getElementById('resume-content');
+    
+    if (!toggleResumeBtn || !resumeContent) return;
+    
+    toggleResumeBtn.addEventListener('click', function() {
+        const isVisible = resumeContent.style.display !== 'none';
+        
+        if (isVisible) {
+            resumeContent.style.display = 'none';
+            toggleResumeBtn.textContent = 'View Resume';
+        } else {
+            resumeContent.style.display = 'block';
+            toggleResumeBtn.textContent = 'Hide Resume';
+            
+            // Scroll to resume content smoothly
+            setTimeout(() => {
+                resumeContent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
         }
     });
 });
