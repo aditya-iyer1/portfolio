@@ -244,39 +244,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// Mobile Prank Popup (Temporary)
-// ============================================
-
-document.addEventListener('DOMContentLoaded', function() {
-    const popup = document.getElementById('pranavPopup');
-    if (!popup) return;
-
-    // Only show on mobile widths
-    if (window.innerWidth > 768) {
-        return;
-    }
-
-    const closeBtn = popup.querySelector('.prank-close');
-
-    function hidePopup() {
-        popup.style.display = 'none';
-        popup.setAttribute('aria-hidden', 'true');
-    }
-
-    // Show on load
-    popup.style.display = 'flex';
-    popup.setAttribute('aria-hidden', 'false');
-
-    popup.addEventListener('click', hidePopup);
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function (e) {
-            e.stopPropagation();
-            hidePopup();
-        });
-    }
-});
-
-// ============================================
 // Form Validation (for contact page if needed)
 // ============================================
 
